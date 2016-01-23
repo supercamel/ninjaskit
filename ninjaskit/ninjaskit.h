@@ -9,7 +9,6 @@
 #include "clock.h"
 #include "flash.h"
 #include "spi.h"
-#include "scheduler.h"
 
 #endif
 
