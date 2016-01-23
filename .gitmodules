@@ -1,3 +1,6 @@
 [submodule "ninjaskit/etk"]
 	path = ninjaskit/etk
 	url = https://github.com/supercamel/EmbeddedToolKit.git
+[submodule "EmbeddedToolKit"]
+	path = EmbeddedToolKit
+	url = https://github.com/supercamel/EmbeddedToolKit.git
