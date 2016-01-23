@@ -1,25 +1,25 @@
 Archive member included to satisfy reference by file (symbol)
 
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o)
-                              ../etk/src/evopid.o (rand)
+                              ../EmbeddedToolKit/src/evopid.o (rand)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-sf_fpclassify.o)
-                              ../etk/src/rope.o (__fpclassifyf)
+                              ../EmbeddedToolKit/src/rope.o (__fpclassifyf)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
                               /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o) (_impure_ptr)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_cos.o)
-                              ../etk/src/navigation.o (cos)
+                              ../EmbeddedToolKit/src/navigation.o (cos)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_sin.o)
-                              ../etk/src/navigation.o (sin)
+                              ../EmbeddedToolKit/src/navigation.o (sin)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-sf_round.o)
-                              ../etk/src/rope.o (roundf)
+                              ../EmbeddedToolKit/src/rope.o (roundf)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_acos.o)
-                              ../etk/src/navigation.o (acos)
+                              ../EmbeddedToolKit/src/navigation.o (acos)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_asin.o)
-                              ../etk/src/navigation.o (asin)
+                              ../EmbeddedToolKit/src/navigation.o (asin)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_atan2.o)
-                              ../etk/src/navigation.o (atan2)
+                              ../EmbeddedToolKit/src/navigation.o (atan2)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-wf_atan2.o)
-                              ../etk/src/navigation.o (atan2f)
+                              ../EmbeddedToolKit/src/navigation.o (atan2f)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_acos.o)
                               /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_acos.o) (__ieee754_acos)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_asin.o)
@@ -91,29 +91,29 @@ Archive member included to satisfy reference by file (symbol)
 ../libopencm3/libopencm3_stm32f1.a(assert.o)
                               ../libopencm3/libopencm3_stm32f1.a(rcc.o) (cm3_assert_failed)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_addsubdf3.o)
-                              ../etk/src/evopid.o (__aeabi_dsub)
+                              ../EmbeddedToolKit/src/evopid.o (__aeabi_dsub)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_muldivdf3.o)
                               ../i2c.o (__aeabi_dmul)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_cmpdf2.o)
-                              ../etk/src/pid.o (__aeabi_dcmpeq)
+                              ../EmbeddedToolKit/src/pid.o (__aeabi_dcmpeq)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_unorddf2.o)
-                              ../etk/src/evopid.o (__aeabi_dcmpun)
+                              ../EmbeddedToolKit/src/evopid.o (__aeabi_dcmpun)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_fixdfsi.o)
                               /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o) (__aeabi_d2iz)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
-                              ../etk/src/pid.o (__aeabi_d2uiz)
+                              ../EmbeddedToolKit/src/pid.o (__aeabi_d2uiz)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_truncdfsf2.o)
-                              ../etk/src/evopid.o (__aeabi_d2f)
+                              ../EmbeddedToolKit/src/evopid.o (__aeabi_d2f)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_addsubsf3.o)
                               /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-ef_atan2.o) (__aeabi_fsub)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_muldivsf3.o)
-                              ../etk/src/rope.o (__aeabi_fmul)
+                              ../EmbeddedToolKit/src/rope.o (__aeabi_fmul)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_cmpsf2.o)
-                              ../etk/src/evopid.o (__aeabi_fcmpgt)
+                              ../EmbeddedToolKit/src/evopid.o (__aeabi_fcmpgt)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_fixsfsi.o)
-                              ../etk/src/evopid.o (__aeabi_f2iz)
+                              ../EmbeddedToolKit/src/evopid.o (__aeabi_f2iz)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/libgcc.a(_arm_fixunssfsi.o)
-                              ../etk/src/evopid.o (__aeabi_f2uiz)
+                              ../EmbeddedToolKit/src/evopid.o (__aeabi_f2uiz)
 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
                               /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_acos.o) (__errno)
 
@@ -146,7 +146,7 @@ Discarded input sections
  .debug_abbrev  0x00000000      0x147 ../flash.o
  .debug_aranges
                 0x00000000       0x20 ../flash.o
- .debug_line    0x00000000      0x1bf ../flash.o
+ .debug_line    0x00000000      0x1cb ../flash.o
  .debug_str     0x00000000      0x3c2 ../flash.o
  .comment       0x00000000       0x6f ../flash.o
  .debug_frame   0x00000000       0x5c ../flash.o
@@ -160,7 +160,7 @@ Discarded input sections
  .debug_abbrev  0x00000000      0x1da ../gpio.o
  .debug_aranges
                 0x00000000       0x20 ../gpio.o
- .debug_line    0x00000000      0x146 ../gpio.o
+ .debug_line    0x00000000      0x152 ../gpio.o
  .debug_str     0x00000000      0x44f ../gpio.o
  .comment       0x00000000       0x6f ../gpio.o
  .debug_frame   0x00000000       0xec ../gpio.o
@@ -187,170 +187,170 @@ Discarded input sections
  .group         0x00000000        0x8 ../usart.o
  .data          0x00000000        0x0 ../usart.o
  .rodata        0x00000000        0x2 ../usart.o
- .text          0x00000000        0x0 ../etk/src/cout.o
- .data          0x00000000        0x0 ../etk/src/cout.o
- .bss           0x00000000        0x0 ../etk/src/cout.o
- .debug_line    0x00000000        0x0 ../etk/src/cout.o
- .debug_str     0x00000000       0xee ../etk/src/cout.o
- .comment       0x00000000       0x6f ../etk/src/cout.o
+ .text          0x00000000        0x0 ../EmbeddedToolKit/src/cout.o
+ .data          0x00000000        0x0 ../EmbeddedToolKit/src/cout.o
+ .bss           0x00000000        0x0 ../EmbeddedToolKit/src/cout.o
+ .debug_line    0x00000000        0x0 ../EmbeddedToolKit/src/cout.o
+ .debug_str     0x00000000       0xfa ../EmbeddedToolKit/src/cout.o
+ .comment       0x00000000       0x6f ../EmbeddedToolKit/src/cout.o
  .ARM.attributes
-                0x00000000       0x33 ../etk/src/cout.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/evopid.o
- .text          0x00000000      0x944 ../etk/src/evopid.o
- .data          0x00000000        0x0 ../etk/src/evopid.o
- .bss           0x00000000        0x0 ../etk/src/evopid.o
+                0x00000000       0x33 ../EmbeddedToolKit/src/cout.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/evopid.o
+ .text          0x00000000      0x944 ../EmbeddedToolKit/src/evopid.o
+ .data          0x00000000        0x0 ../EmbeddedToolKit/src/evopid.o
+ .bss           0x00000000        0x0 ../EmbeddedToolKit/src/evopid.o
  .text._ZSt5isnand
-                0x00000000       0x30 ../etk/src/evopid.o
+                0x00000000       0x30 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk13ExpoMovingAvgC2Ev
-                0x00000000       0x34 ../etk/src/evopid.o
+                0x00000000       0x34 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk13ExpoMovingAvg8set_gainEd
-                0x00000000       0x20 ../etk/src/evopid.o
+                0x00000000       0x20 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk13ExpoMovingAvg4stepEd
-                0x00000000       0x74 ../etk/src/evopid.o
+                0x00000000       0x74 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk13ExpoMovingAvg3getEv
-                0x00000000       0x18 ../etk/src/evopid.o
+                0x00000000       0x18 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk6EvoPid7PIDGainC2Ev
-                0x00000000       0x14 ../etk/src/evopid.o
+                0x00000000       0x14 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk6EvoPid7PIDGainC2Eddd
-                0x00000000       0x38 ../etk/src/evopid.o
+                0x00000000       0x38 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk6EvoPid7PIDGaingtERS1_
-                0x00000000       0x3c ../etk/src/evopid.o
+                0x00000000       0x3c ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk9constrainIdddEEDaT_T0_T1_
-                0x00000000       0x4c ../etk/src/evopid.o
+                0x00000000       0x4c ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EE5beginEv
-                0x00000000       0x24 ../etk/src/evopid.o
+                0x00000000       0x24 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EE3endEv
-                0x00000000       0x24 ../etk/src/evopid.o
+                0x00000000       0x24 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EE8IteratorneES4_
-                0x00000000       0x28 ../etk/src/evopid.o
+                0x00000000       0x28 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EE8IteratorppEv
-                0x00000000       0x20 ../etk/src/evopid.o
+                0x00000000       0x20 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EE8IteratordeEv
-                0x00000000       0x24 ../etk/src/evopid.o
+                0x00000000       0x24 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EEC2Ev
-                0x00000000       0x2c ../etk/src/evopid.o
+                0x00000000       0x2c ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EEixEj
-                0x00000000       0x28 ../etk/src/evopid.o
+                0x00000000       0x28 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk14bubble_sort_upINS_5ArrayINS_6EvoPid7PIDGainELj8EEEEEvRT_j
-                0x00000000       0x80 ../etk/src/evopid.o
+                0x00000000       0x80 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk5ArrayINS_6EvoPid7PIDGainELj8EE8IteratorC2ERS3_
-                0x00000000       0x24 ../etk/src/evopid.o
+                0x00000000       0x24 ../EmbeddedToolKit/src/evopid.o
  .text._ZN3etk4swapINS_6EvoPid7PIDGainES2_EEvRT_RT0_
-                0x00000000       0x50 ../etk/src/evopid.o
- .debug_info    0x00000000     0x13cd ../etk/src/evopid.o
- .debug_abbrev  0x00000000      0x498 ../etk/src/evopid.o
+                0x00000000       0x50 ../EmbeddedToolKit/src/evopid.o
+ .debug_info    0x00000000     0x13cd ../EmbeddedToolKit/src/evopid.o
+ .debug_abbrev  0x00000000      0x498 ../EmbeddedToolKit/src/evopid.o
  .debug_aranges
-                0x00000000       0xb8 ../etk/src/evopid.o
- .debug_ranges  0x00000000       0xa8 ../etk/src/evopid.o
- .debug_line    0x00000000      0x416 ../etk/src/evopid.o
- .debug_str     0x00000000      0xe33 ../etk/src/evopid.o
- .comment       0x00000000       0x6f ../etk/src/evopid.o
- .debug_frame   0x00000000      0x418 ../etk/src/evopid.o
+                0x00000000       0xb8 ../EmbeddedToolKit/src/evopid.o
+ .debug_ranges  0x00000000       0xa8 ../EmbeddedToolKit/src/evopid.o
+ .debug_line    0x00000000      0x42e ../EmbeddedToolKit/src/evopid.o
+ .debug_str     0x00000000      0xe3f ../EmbeddedToolKit/src/evopid.o
+ .comment       0x00000000       0x6f ../EmbeddedToolKit/src/evopid.o
+ .debug_frame   0x00000000      0x418 ../EmbeddedToolKit/src/evopid.o
  .ARM.attributes
-                0x00000000       0x33 ../etk/src/evopid.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/navigation.o
- .text          0x00000000      0x758 ../etk/src/navigation.o
- .data          0x00000000        0x0 ../etk/src/navigation.o
- .bss           0x00000000        0x0 ../etk/src/navigation.o
+                0x00000000       0x33 ../EmbeddedToolKit/src/evopid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/navigation.o
+ .text          0x00000000      0x758 ../EmbeddedToolKit/src/navigation.o
+ .data          0x00000000        0x0 ../EmbeddedToolKit/src/navigation.o
+ .bss           0x00000000        0x0 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk18degrees_to_radiansEd
-                0x00000000       0x30 ../etk/src/navigation.o
+                0x00000000       0x30 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk18radians_to_degreesEd
-                0x00000000       0x30 ../etk/src/navigation.o
+                0x00000000       0x30 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk10CoordinateC2Ev
-                0x00000000       0x30 ../etk/src/navigation.o
+                0x00000000       0x30 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk6VectorILj2EE1xEv
-                0x00000000       0x14 ../etk/src/navigation.o
+                0x00000000       0x14 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk6VectorILj2EE1yEv
-                0x00000000       0x18 ../etk/src/navigation.o
+                0x00000000       0x18 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk6VectorILj3EE1xEv
-                0x00000000       0x14 ../etk/src/navigation.o
+                0x00000000       0x14 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk6VectorILj3EE1yEv
-                0x00000000       0x18 ../etk/src/navigation.o
+                0x00000000       0x18 ../EmbeddedToolKit/src/navigation.o
  .text._ZN3etk6VectorILj3EE1zEv
-                0x00000000       0x18 ../etk/src/navigation.o
- .debug_info    0x00000000     0x134b ../etk/src/navigation.o
- .debug_abbrev  0x00000000      0x2c4 ../etk/src/navigation.o
+                0x00000000       0x18 ../EmbeddedToolKit/src/navigation.o
+ .debug_info    0x00000000     0x134b ../EmbeddedToolKit/src/navigation.o
+ .debug_abbrev  0x00000000      0x2c4 ../EmbeddedToolKit/src/navigation.o
  .debug_aranges
-                0x00000000       0x60 ../etk/src/navigation.o
- .debug_ranges  0x00000000       0x50 ../etk/src/navigation.o
- .debug_line    0x00000000      0x189 ../etk/src/navigation.o
- .debug_str     0x00000000      0xfc8 ../etk/src/navigation.o
- .comment       0x00000000       0x6f ../etk/src/navigation.o
- .debug_frame   0x00000000      0x32c ../etk/src/navigation.o
+                0x00000000       0x60 ../EmbeddedToolKit/src/navigation.o
+ .debug_ranges  0x00000000       0x50 ../EmbeddedToolKit/src/navigation.o
+ .debug_line    0x00000000      0x1a1 ../EmbeddedToolKit/src/navigation.o
+ .debug_str     0x00000000      0xfd4 ../EmbeddedToolKit/src/navigation.o
+ .comment       0x00000000       0x6f ../EmbeddedToolKit/src/navigation.o
+ .debug_frame   0x00000000      0x32c ../EmbeddedToolKit/src/navigation.o
  .ARM.attributes
-                0x00000000       0x33 ../etk/src/navigation.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/pid.o
- .text          0x00000000      0x590 ../etk/src/pid.o
- .data          0x00000000        0x0 ../etk/src/pid.o
- .bss           0x00000000        0x0 ../etk/src/pid.o
+                0x00000000       0x33 ../EmbeddedToolKit/src/navigation.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/pid.o
+ .text          0x00000000      0x590 ../EmbeddedToolKit/src/pid.o
+ .data          0x00000000        0x0 ../EmbeddedToolKit/src/pid.o
+ .bss           0x00000000        0x0 ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk13ExpoMovingAvgC2Ev
-                0x00000000       0x34 ../etk/src/pid.o
+                0x00000000       0x34 ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk13ExpoMovingAvgC2Edd
-                0x00000000       0x2c ../etk/src/pid.o
+                0x00000000       0x2c ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk13ExpoMovingAvg4stepEd
-                0x00000000       0x74 ../etk/src/pid.o
+                0x00000000       0x74 ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk13ExpoMovingAvg3getEv
-                0x00000000       0x18 ../etk/src/pid.o
+                0x00000000       0x18 ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk9constrainIdddEEDaT_T0_T1_
-                0x00000000       0x4c ../etk/src/pid.o
+                0x00000000       0x4c ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk3absIdEET_S1_
-                0x00000000       0x3c ../etk/src/pid.o
+                0x00000000       0x3c ../EmbeddedToolKit/src/pid.o
  .text._ZN3etk18constrain_circularIdEEDaT_j
-                0x00000000       0x94 ../etk/src/pid.o
- .debug_info    0x00000000      0x7d2 ../etk/src/pid.o
- .debug_abbrev  0x00000000      0x296 ../etk/src/pid.o
+                0x00000000       0x94 ../EmbeddedToolKit/src/pid.o
+ .debug_info    0x00000000      0x7d2 ../EmbeddedToolKit/src/pid.o
+ .debug_abbrev  0x00000000      0x296 ../EmbeddedToolKit/src/pid.o
  .debug_aranges
-                0x00000000       0x58 ../etk/src/pid.o
- .debug_ranges  0x00000000       0x48 ../etk/src/pid.o
- .debug_line    0x00000000      0x154 ../etk/src/pid.o
- .debug_str     0x00000000      0x696 ../etk/src/pid.o
- .comment       0x00000000       0x6f ../etk/src/pid.o
- .debug_frame   0x00000000      0x20c ../etk/src/pid.o
+                0x00000000       0x58 ../EmbeddedToolKit/src/pid.o
+ .debug_ranges  0x00000000       0x48 ../EmbeddedToolKit/src/pid.o
+ .debug_line    0x00000000      0x16c ../EmbeddedToolKit/src/pid.o
+ .debug_str     0x00000000      0x6a2 ../EmbeddedToolKit/src/pid.o
+ .comment       0x00000000       0x6f ../EmbeddedToolKit/src/pid.o
+ .debug_frame   0x00000000      0x20c ../EmbeddedToolKit/src/pid.o
  .ARM.attributes
-                0x00000000       0x33 ../etk/src/pid.o
- .group         0x00000000        0x8 ../etk/src/rope.o
- .group         0x00000000        0x8 ../etk/src/rope.o
- .group         0x00000000        0x8 ../etk/src/rope.o
- .data          0x00000000        0x0 ../etk/src/rope.o
- .bss           0x00000000        0x0 ../etk/src/rope.o
- .group         0x00000000        0x8 ../etk/src/time.o
- .group         0x00000000        0x8 ../etk/src/time.o
- .group         0x00000000        0x8 ../etk/src/time.o
- .group         0x00000000        0x8 ../etk/src/time.o
- .group         0x00000000        0x8 ../etk/src/time.o
+                0x00000000       0x33 ../EmbeddedToolKit/src/pid.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/rope.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/rope.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/rope.o
+ .data          0x00000000        0x0 ../EmbeddedToolKit/src/rope.o
+ .bss           0x00000000        0x0 ../EmbeddedToolKit/src/rope.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/time.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/time.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/time.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/time.o
+ .group         0x00000000        0x8 ../EmbeddedToolKit/src/time.o
  .text._ZN3etk4TimeC2ERS0_
-                0x00000000       0x28 ../etk/src/time.o
+                0x00000000       0x28 ../EmbeddedToolKit/src/time.o
  .text          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o)
  .data          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o)
  .bss           0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o)
@@ -1446,12 +1446,12 @@ LOAD ../gpio.o
 LOAD ../i2c.o
 LOAD ../spi.o
 LOAD ../usart.o
-LOAD ../etk/src/cout.o
-LOAD ../etk/src/evopid.o
-LOAD ../etk/src/navigation.o
-LOAD ../etk/src/pid.o
-LOAD ../etk/src/rope.o
-LOAD ../etk/src/time.o
+LOAD ../EmbeddedToolKit/src/cout.o
+LOAD ../EmbeddedToolKit/src/evopid.o
+LOAD ../EmbeddedToolKit/src/navigation.o
+LOAD ../EmbeddedToolKit/src/pid.o
+LOAD ../EmbeddedToolKit/src/rope.o
+LOAD ../EmbeddedToolKit/src/time.o
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libnosys.a
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a
@@ -1517,7 +1517,7 @@ END GROUP
  .text._ZN3etk10RingBufferIhLb0EE7is_fullEv
                 0x0800109c       0x34 ../usart.o
                 0x0800109c                etk::RingBuffer<unsigned char, false>::is_full()
- .text          0x080010d0      0xde4 ../etk/src/rope.o
+ .text          0x080010d0      0xde4 ../EmbeddedToolKit/src/rope.o
                 0x080010d0                etk::Rope::Rope(char*, unsigned int, char const*)
                 0x080010d0                etk::Rope::Rope(char*, unsigned int, char const*)
                 0x08001138                etk::Rope::Rope(char*, unsigned int)
@@ -1573,15 +1573,15 @@ END GROUP
                 0x08001e38                etk::Rope::c_strlen(char const*, unsigned int)
                 0x08001e74                etk::Rope::terminate()
  .text._ZN3etk3minIjjEEDaT_T0_
-                0x08001eb4       0x24 ../etk/src/rope.o
+                0x08001eb4       0x24 ../EmbeddedToolKit/src/rope.o
                 0x08001eb4                auto etk::min<unsigned int, unsigned int>(unsigned int, unsigned int)
  .text._ZN3etk3minIiiEEDaT_T0_
-                0x08001ed8       0x24 ../etk/src/rope.o
+                0x08001ed8       0x24 ../EmbeddedToolKit/src/rope.o
                 0x08001ed8                auto etk::min<int, int>(int, int)
  .text._ZN3etk3maxIiiEEDaT_T0_
-                0x08001efc       0x24 ../etk/src/rope.o
+                0x08001efc       0x24 ../EmbeddedToolKit/src/rope.o
                 0x08001efc                auto etk::max<int, int>(int, int)
- .text          0x08001f20      0x428 ../etk/src/time.o
+ .text          0x08001f20      0x428 ../EmbeddedToolKit/src/time.o
                 0x08001f20                etk::set_tick_rate(unsigned int)
                 0x08001f3c                etk::Time::operator=(etk::Time const&) volatile
                 0x08001f64                etk::Time::diff_time(etk::Time)
@@ -1595,18 +1595,18 @@ END GROUP
                 0x08002204                etk::now()
                 0x08002220                etk::Time::to_rope(etk::Rope&)
  .text._ZN3etk4TimeC2Ev
-                0x08002348       0x18 ../etk/src/time.o
+                0x08002348       0x18 ../EmbeddedToolKit/src/time.o
                 0x08002348                etk::Time::Time()
                 0x08002348                etk::Time::Time()
  .text._ZN3etk4TimeC2ERVS0_
-                0x08002360       0x28 ../etk/src/time.o
+                0x08002360       0x28 ../EmbeddedToolKit/src/time.o
                 0x08002360                etk::Time::Time(etk::Time volatile&)
                 0x08002360                etk::Time::Time(etk::Time volatile&)
  .text._ZN3etk4Time7secondsEv
-                0x08002388       0x14 ../etk/src/time.o
+                0x08002388       0x14 ../EmbeddedToolKit/src/time.o
                 0x08002388                etk::Time::seconds()
  .text._ZN3etk4Time6microsEv
-                0x0800239c       0x18 ../etk/src/time.o
+                0x0800239c       0x18 ../EmbeddedToolKit/src/time.o
                 0x0800239c                etk::Time::micros()
  .text.__fpclassifyf
                 0x080023b4       0x34 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-sf_fpclassify.o)
@@ -1909,8 +1909,8 @@ END GROUP
  *(.rodata*)
  .rodata        0x0800375c       0x13 main.o
  *fill*         0x0800376f        0x1 
- .rodata        0x08003770        0x8 ../etk/src/rope.o
- .rodata        0x08003778       0x25 ../etk/src/time.o
+ .rodata        0x08003770        0x8 ../EmbeddedToolKit/src/rope.o
+ .rodata        0x08003778       0x25 ../EmbeddedToolKit/src/time.o
                 0x080037a0                . = ALIGN (0x4)
  *fill*         0x0800379d        0x3 
 
@@ -1945,7 +1945,7 @@ END GROUP
  *(.init_array)
  .init_array    0x080037a0        0x4 ../i2c.o
  .init_array    0x080037a4        0x4 ../usart.o
- .init_array    0x080037a8        0x4 ../etk/src/time.o
+ .init_array    0x080037a8        0x4 ../EmbeddedToolKit/src/time.o
                 0x080037ac                __init_array_end = .
 
 .fini_array     0x080037ac        0x0
@@ -1968,7 +1968,7 @@ END GROUP
 .data           0x20000000       0x10 load address 0x080037ac
                 0x20000000                _data = .
  *(.data*)
- .data          0x20000000        0x4 ../etk/src/time.o
+ .data          0x20000000        0x4 ../EmbeddedToolKit/src/time.o
  .data.rcc_ahb_frequency
                 0x20000004        0x4 ../libopencm3/libopencm3_stm32f1.a(rcc.o)
                 0x20000004                rcc_ahb_frequency
@@ -1994,7 +1994,7 @@ END GROUP
                 0x20000020                Serial1
                 0x20000130                Serial2
                 0x20000240                Serial3
- .bss           0x20000350        0x8 ../etk/src/time.o
+ .bss           0x20000350        0x8 ../EmbeddedToolKit/src/time.o
  *(COMMON)
                 0x20000358                . = ALIGN (0x4)
                 0x20000358                _ebss = .
@@ -2011,8 +2011,8 @@ OUTPUT(project.elf elf32-littlearm)
  .debug_info    0x00000588      0x359 ../clock.o
  .debug_info    0x000008e1     0x1104 ../i2c.o
  .debug_info    0x000019e5      0x949 ../usart.o
- .debug_info    0x0000232e     0x17f2 ../etk/src/rope.o
- .debug_info    0x00003b20      0xf46 ../etk/src/time.o
+ .debug_info    0x0000232e     0x17f2 ../EmbeddedToolKit/src/rope.o
+ .debug_info    0x00003b20      0xf46 ../EmbeddedToolKit/src/time.o
  .debug_info    0x00004a66      0x1d0 ../libopencm3/libopencm3_stm32f1.a(gpio.o)
  .debug_info    0x00004c36     0x110e ../libopencm3/libopencm3_stm32f1.a(rcc.o)
  .debug_info    0x00005d44      0x761 ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
@@ -2029,8 +2029,8 @@ OUTPUT(project.elf elf32-littlearm)
  .debug_abbrev  0x0000027e      0x13b ../clock.o
  .debug_abbrev  0x000003b9      0x321 ../i2c.o
  .debug_abbrev  0x000006da      0x398 ../usart.o
- .debug_abbrev  0x00000a72      0x2cc ../etk/src/rope.o
- .debug_abbrev  0x00000d3e      0x2a1 ../etk/src/time.o
+ .debug_abbrev  0x00000a72      0x2cc ../EmbeddedToolKit/src/rope.o
+ .debug_abbrev  0x00000d3e      0x2a1 ../EmbeddedToolKit/src/time.o
  .debug_abbrev  0x00000fdf       0xb7 ../libopencm3/libopencm3_stm32f1.a(gpio.o)
  .debug_abbrev  0x00001096      0x247 ../libopencm3/libopencm3_stm32f1.a(rcc.o)
  .debug_abbrev  0x000012dd      0x168 ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
@@ -2052,9 +2052,9 @@ OUTPUT(project.elf elf32-littlearm)
  .debug_aranges
                 0x00000080       0x40 ../usart.o
  .debug_aranges
-                0x000000c0       0x38 ../etk/src/rope.o
+                0x000000c0       0x38 ../EmbeddedToolKit/src/rope.o
  .debug_aranges
-                0x000000f8       0x48 ../etk/src/time.o
+                0x000000f8       0x48 ../EmbeddedToolKit/src/time.o
  .debug_aranges
                 0x00000140       0x38 ../libopencm3/libopencm3_stm32f1.a(gpio.o)
  .debug_aranges
@@ -2080,8 +2080,8 @@ OUTPUT(project.elf elf32-littlearm)
  .debug_ranges  0x00000000       0x20 main.o
  .debug_ranges  0x00000020       0x20 ../i2c.o
  .debug_ranges  0x00000040       0x30 ../usart.o
- .debug_ranges  0x00000070       0x28 ../etk/src/rope.o
- .debug_ranges  0x00000098       0x38 ../etk/src/time.o
+ .debug_ranges  0x00000070       0x28 ../EmbeddedToolKit/src/rope.o
+ .debug_ranges  0x00000098       0x38 ../EmbeddedToolKit/src/time.o
  .debug_ranges  0x000000d0       0x28 ../libopencm3/libopencm3_stm32f1.a(gpio.o)
  .debug_ranges  0x000000f8      0x1b0 ../libopencm3/libopencm3_stm32f1.a(rcc.o)
  .debug_ranges  0x000002a8       0xf8 ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
@@ -2093,25 +2093,25 @@ OUTPUT(project.elf elf32-littlearm)
  .debug_ranges  0x00000560       0x68 ../libopencm3/libopencm3_stm32f1.a(systick.o)
  .debug_ranges  0x000005c8       0x50 ../libopencm3/libopencm3_stm32f1.a(nvic.o)
 
-.debug_line     0x00000000     0x2c20
- .debug_line    0x00000000      0x196 main.o
- .debug_line    0x00000196      0x141 ../clock.o
- .debug_line    0x000002d7      0x26f ../i2c.o
- .debug_line    0x00000546      0x256 ../usart.o
- .debug_line    0x0000079c      0x2e6 ../etk/src/rope.o
- .debug_line    0x00000a82      0x13d ../etk/src/time.o
- .debug_line    0x00000bbf      0x260 ../libopencm3/libopencm3_stm32f1.a(gpio.o)
- .debug_line    0x00000e1f      0x613 ../libopencm3/libopencm3_stm32f1.a(rcc.o)
- .debug_line    0x00001432      0x43d ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
- .debug_line    0x0000186f      0x3cb ../libopencm3/libopencm3_stm32f1.a(usart_common_all.o)
- .debug_line    0x00001c3a      0x2db ../libopencm3/libopencm3_stm32f1.a(usart_common_f124.o)
- .debug_line    0x00001f15      0x29a ../libopencm3/libopencm3_stm32f1.a(rcc_common_all.o)
- .debug_line    0x000021af      0x320 ../libopencm3/libopencm3_stm32f1.a(flash_common_f01.o)
- .debug_line    0x000024cf      0x2a7 ../libopencm3/libopencm3_stm32f1.a(vector.o)
- .debug_line    0x00002776      0x245 ../libopencm3/libopencm3_stm32f1.a(systick.o)
- .debug_line    0x000029bb      0x265 ../libopencm3/libopencm3_stm32f1.a(nvic.o)
+.debug_line     0x00000000     0x2c80
+ .debug_line    0x00000000      0x1a2 main.o
+ .debug_line    0x000001a2      0x14d ../clock.o
+ .debug_line    0x000002ef      0x27b ../i2c.o
+ .debug_line    0x0000056a      0x262 ../usart.o
+ .debug_line    0x000007cc      0x2fe ../EmbeddedToolKit/src/rope.o
+ .debug_line    0x00000aca      0x155 ../EmbeddedToolKit/src/time.o
+ .debug_line    0x00000c1f      0x260 ../libopencm3/libopencm3_stm32f1.a(gpio.o)
+ .debug_line    0x00000e7f      0x613 ../libopencm3/libopencm3_stm32f1.a(rcc.o)
+ .debug_line    0x00001492      0x43d ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
+ .debug_line    0x000018cf      0x3cb ../libopencm3/libopencm3_stm32f1.a(usart_common_all.o)
+ .debug_line    0x00001c9a      0x2db ../libopencm3/libopencm3_stm32f1.a(usart_common_f124.o)
+ .debug_line    0x00001f75      0x29a ../libopencm3/libopencm3_stm32f1.a(rcc_common_all.o)
+ .debug_line    0x0000220f      0x320 ../libopencm3/libopencm3_stm32f1.a(flash_common_f01.o)
+ .debug_line    0x0000252f      0x2a7 ../libopencm3/libopencm3_stm32f1.a(vector.o)
+ .debug_line    0x000027d6      0x245 ../libopencm3/libopencm3_stm32f1.a(systick.o)
+ .debug_line    0x00002a1b      0x265 ../libopencm3/libopencm3_stm32f1.a(nvic.o)
 
-.debug_str      0x00000000    0x11298
+.debug_str      0x00000000    0x112b0
  .debug_str     0x00000000      0x541 main.o
                                 0x5f9 (size before relaxing)
  .debug_str     0x00000541      0x271 ../clock.o
@@ -2120,29 +2120,29 @@ OUTPUT(project.elf elf32-littlearm)
                                 0xe2a (size before relaxing)
  .debug_str     0x000010a9       0xda ../usart.o
                                 0x95f (size before relaxing)
- .debug_str     0x00001183      0x142 ../etk/src/rope.o
-                                0x862 (size before relaxing)
- .debug_str     0x000012c5       0xea ../etk/src/time.o
-                                0xa34 (size before relaxing)
- .debug_str     0x000013af     0x78aa ../libopencm3/libopencm3_stm32f1.a(gpio.o)
+ .debug_str     0x00001183      0x14e ../EmbeddedToolKit/src/rope.o
+                                0x86e (size before relaxing)
+ .debug_str     0x000012d1       0xf6 ../EmbeddedToolKit/src/time.o
+                                0xa40 (size before relaxing)
+ .debug_str     0x000013c7     0x78aa ../libopencm3/libopencm3_stm32f1.a(gpio.o)
                                0x7a24 (size before relaxing)
- .debug_str     0x00008c59     0x304f ../libopencm3/libopencm3_stm32f1.a(rcc.o)
+ .debug_str     0x00008c71     0x304f ../libopencm3/libopencm3_stm32f1.a(rcc.o)
                                0x7264 (size before relaxing)
- .debug_str     0x0000bca8     0x104d ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
+ .debug_str     0x0000bcc0     0x104d ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
                                0x762e (size before relaxing)
- .debug_str     0x0000ccf5     0x109c ../libopencm3/libopencm3_stm32f1.a(usart_common_all.o)
+ .debug_str     0x0000cd0d     0x109c ../libopencm3/libopencm3_stm32f1.a(usart_common_all.o)
                                0x76a2 (size before relaxing)
- .debug_str     0x0000dd91       0x51 ../libopencm3/libopencm3_stm32f1.a(usart_common_f124.o)
+ .debug_str     0x0000dda9       0x51 ../libopencm3/libopencm3_stm32f1.a(usart_common_f124.o)
                                0x74da (size before relaxing)
- .debug_str     0x0000dde2      0x11a ../libopencm3/libopencm3_stm32f1.a(rcc_common_all.o)
+ .debug_str     0x0000ddfa      0x11a ../libopencm3/libopencm3_stm32f1.a(rcc_common_all.o)
                                0x6af1 (size before relaxing)
- .debug_str     0x0000defc      0x179 ../libopencm3/libopencm3_stm32f1.a(flash_common_f01.o)
+ .debug_str     0x0000df14      0x179 ../libopencm3/libopencm3_stm32f1.a(flash_common_f01.o)
                                0x4acb (size before relaxing)
- .debug_str     0x0000e075     0x24ed ../libopencm3/libopencm3_stm32f1.a(vector.o)
+ .debug_str     0x0000e08d     0x24ed ../libopencm3/libopencm3_stm32f1.a(vector.o)
                                0x5b76 (size before relaxing)
- .debug_str     0x00010562      0x346 ../libopencm3/libopencm3_stm32f1.a(systick.o)
+ .debug_str     0x0001057a      0x346 ../libopencm3/libopencm3_stm32f1.a(systick.o)
                                0x39e4 (size before relaxing)
- .debug_str     0x000108a8      0x9f0 ../libopencm3/libopencm3_stm32f1.a(nvic.o)
+ .debug_str     0x000108c0      0x9f0 ../libopencm3/libopencm3_stm32f1.a(nvic.o)
                                0x4881 (size before relaxing)
 
 .comment        0x00000000       0x6e
@@ -2151,8 +2151,8 @@ OUTPUT(project.elf elf32-littlearm)
  .comment       0x0000006e       0x6f ../clock.o
  .comment       0x0000006e       0x6f ../i2c.o
  .comment       0x0000006e       0x6f ../usart.o
- .comment       0x0000006e       0x6f ../etk/src/rope.o
- .comment       0x0000006e       0x6f ../etk/src/time.o
+ .comment       0x0000006e       0x6f ../EmbeddedToolKit/src/rope.o
+ .comment       0x0000006e       0x6f ../EmbeddedToolKit/src/time.o
  .comment       0x0000006e       0x6f ../libopencm3/libopencm3_stm32f1.a(gpio.o)
  .comment       0x0000006e       0x6f ../libopencm3/libopencm3_stm32f1.a(rcc.o)
  .comment       0x0000006e       0x6f ../libopencm3/libopencm3_stm32f1.a(i2c_common_all.o)
@@ -2175,9 +2175,9 @@ OUTPUT(project.elf elf32-littlearm)
  .ARM.attributes
                 0x00000099       0x33 ../usart.o
  .ARM.attributes
-                0x000000cc       0x33 ../etk/src/rope.o
+                0x000000cc       0x33 ../EmbeddedToolKit/src/rope.o
  .ARM.attributes
-                0x000000ff       0x33 ../etk/src/time.o
+                0x000000ff       0x33 ../EmbeddedToolKit/src/time.o
  .ARM.attributes
                 0x00000132       0x2d /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-sf_fpclassify.o)
  .ARM.attributes
@@ -2222,8 +2222,8 @@ OUTPUT(project.elf elf32-littlearm)
  .debug_frame   0x00000078       0x48 ../clock.o
  .debug_frame   0x000000c0      0x17c ../i2c.o
  .debug_frame   0x0000023c      0x1bc ../usart.o
- .debug_frame   0x000003f8      0x7e0 ../etk/src/rope.o
- .debug_frame   0x00000bd8      0x2e4 ../etk/src/time.o
+ .debug_frame   0x000003f8      0x7e0 ../EmbeddedToolKit/src/rope.o
+ .debug_frame   0x00000bd8      0x2e4 ../EmbeddedToolKit/src/time.o
  .debug_frame   0x00000ebc       0x20 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-sf_fpclassify.o)
  .debug_frame   0x00000edc       0x28 /usr/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-sf_round.o)
  .debug_frame   0x00000f04       0x64 ../libopencm3/libopencm3_stm32f1.a(gpio.o)

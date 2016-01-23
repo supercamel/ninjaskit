@@ -9,12 +9,12 @@ MAP_NAME=$(PROJECT).map
 CC=arm-none-eabi-g++
 LD=arm-none-eabi-gcc
 OBJCOPY=arm-none-eabi-objcopy
-INC_DIRS=-I./ -I../etk/inc -I../../ -I../
+INC_DIRS=-I./ -I../EmbeddedToolKit/inc -I../../ -I../
 CFLAGS+=-Wall -Wextra -g -fno-common -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -MD -DSTM32F1 $(INC_DIRS) -fno-common  -DGCC_ARMCM3
 CPPFLAGS = $(CFLAGS) -fno-rtti -fno-exceptions -std=c++14
 LDFLAGS+=--static -lc -lnosys -T ../STM32F103xB.ld -nostartfiles -Wl,--gc-sections -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -lm -Wl,-Map=$(MAP_NAME) -L../libopencm3 -lopencm3_stm32f1
 C_SOURCES=
-SOURCES=$(wildcard *.cpp) $(wildcard ../*.cpp) $(wildcard ../etk/src/*.cpp)
+SOURCES=$(wildcard *.cpp) $(wildcard ../*.cpp) $(wildcard ../EmbeddedToolKit/src/*.cpp)
 OBJS=$(SOURCES:.cpp=.o) $(C_SOURCES:.c=.o)
 D_FILES=$(SOURCES:.cpp=.d) $(C_SOURCES:.c=.o)
 

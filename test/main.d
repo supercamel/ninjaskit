@@ -1,5 +1,6 @@
-main.o: main.cpp ../../ninjaskit/ninjaskit.h ../etk/inc/etk/etk.h \
- ../etk/inc/etk/stream.h ../etk/inc/etk/rope.h ../etk/inc/etk/types.h \
+main.o: main.cpp ../../ninjaskit/ninjaskit.h \
+ ../EmbeddedToolKit/inc/etk/etk.h ../EmbeddedToolKit/inc/etk/stream.h \
+ ../EmbeddedToolKit/inc/etk/rope.h ../EmbeddedToolKit/inc/etk/types.h \
  /usr/arm-none-eabi/include/string.h /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/sys/config.h \
@@ -13,27 +14,35 @@ main.o: main.cpp ../../ninjaskit/ninjaskit.h ../etk/inc/etk/etk.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/lock.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
- /usr/arm-none-eabi/include/sys/string.h ../etk/inc/etk/vector.h \
- /usr/arm-none-eabi/include/math.h ../etk/inc/etk/math_util.h \
- ../etk/inc/etk/matrix.h ../etk/inc/etk/tokeniser.h \
- ../etk/inc/etk/quaternion.h ../etk/inc/etk/bits.h \
- ../etk/inc/etk/staticstring.h ../etk/inc/etk/rope.h \
- ../etk/inc/etk/vector.h /usr/arm-none-eabi/include/c++/5.2.1/type_traits \
+ /usr/arm-none-eabi/include/sys/string.h \
+ ../EmbeddedToolKit/inc/etk/vector.h /usr/arm-none-eabi/include/math.h \
+ ../EmbeddedToolKit/inc/etk/math_util.h \
+ ../EmbeddedToolKit/inc/etk/matrix.h \
+ ../EmbeddedToolKit/inc/etk/tokeniser.h \
+ ../EmbeddedToolKit/inc/etk/quaternion.h \
+ ../EmbeddedToolKit/inc/etk/bits.h \
+ ../EmbeddedToolKit/inc/etk/staticstring.h \
+ ../EmbeddedToolKit/inc/etk/rope.h ../EmbeddedToolKit/inc/etk/vector.h \
+ /usr/arm-none-eabi/include/c++/5.2.1/type_traits \
  /usr/arm-none-eabi/include/c++/5.2.1/arm-none-eabi/armv7-m/bits/c++config.h \
  /usr/arm-none-eabi/include/c++/5.2.1/arm-none-eabi/armv7-m/bits/os_defines.h \
  /usr/arm-none-eabi/include/c++/5.2.1/arm-none-eabi/armv7-m/bits/cpu_defines.h \
- ../etk/inc/etk/conversions.h ../etk/inc/etk/list.h \
- ../etk/inc/etk/ring_buffer.h ../etk/inc/etk/time.h \
- ../etk/inc/etk/filters.h ../etk/inc/etk/navigation.h \
- ../etk/inc/etk/conversions.h ../etk/inc/etk/loop_range.h \
- ../etk/inc/etk/stm.h ../etk/inc/etk/fuzzy.h ../etk/inc/etk/list.h \
- ../etk/inc/etk/pid.h ../etk/inc/etk/array.h ../etk/inc/etk/pid_rater.h \
+ ../EmbeddedToolKit/inc/etk/conversions.h \
+ ../EmbeddedToolKit/inc/etk/list.h \
+ ../EmbeddedToolKit/inc/etk/ring_buffer.h \
+ ../EmbeddedToolKit/inc/etk/time.h ../EmbeddedToolKit/inc/etk/filters.h \
+ ../EmbeddedToolKit/inc/etk/navigation.h \
+ ../EmbeddedToolKit/inc/etk/conversions.h \
+ ../EmbeddedToolKit/inc/etk/loop_range.h ../EmbeddedToolKit/inc/etk/stm.h \
+ ../EmbeddedToolKit/inc/etk/fuzzy.h ../EmbeddedToolKit/inc/etk/list.h \
+ ../EmbeddedToolKit/inc/etk/pid.h ../EmbeddedToolKit/inc/etk/array.h \
+ ../EmbeddedToolKit/inc/etk/pid_rater.h \
  /usr/arm-none-eabi/include/c++/5.2.1/cmath \
  /usr/arm-none-eabi/include/c++/5.2.1/bits/cpp_type_traits.h \
  /usr/arm-none-eabi/include/c++/5.2.1/ext/type_traits.h \
- ../etk/inc/etk/evopid.h ../etk/inc/etk/objpool.h ../etk/inc/etk/array.h \
- ../../ninjaskit/usart.h ../libopencm3/stm32/usart.h \
- ../libopencm3/cm3/common.h \
+ ../EmbeddedToolKit/inc/etk/evopid.h ../EmbeddedToolKit/inc/etk/objpool.h \
+ ../EmbeddedToolKit/inc/etk/array.h ../../ninjaskit/usart.h \
+ ../libopencm3/stm32/usart.h ../libopencm3/cm3/common.h \
  /usr/lib/gcc/arm-none-eabi/5.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/sys/_intsup.h \
