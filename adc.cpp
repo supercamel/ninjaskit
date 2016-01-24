@@ -10,9 +10,6 @@ void adc_setup()
 {
     rcc_periph_clock_enable(RCC_ADC1);
 
-    gpio_set_mode(GPIOA, GPIO_MODE_INPUT, GPIO_CNF_INPUT_ANALOG, GPIO0);
-    gpio_set_mode(GPIOA, GPIO_MODE_INPUT, GPIO_CNF_INPUT_ANALOG, GPIO1);
-
     /* Make sure the ADC doesn't run during config. */
     adc_off(ADC1);
 
@@ -38,8 +35,6 @@ void adc_setup()
     /* Start the conversion directly (not trigger mode). */
     adc_start_conversion_direct(ADC1);
 }
-
-
 
 uint16_t adc_read(uint8_t ch)
 {

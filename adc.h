@@ -1,10 +1,10 @@
 #ifndef ADC_H_INCLUDED
 #define ADC_H_INCLUDED
 
-#include <stdint.h>
+#include <etk/etk.h>
 
 void adc_setup();
-uint16_t adc_read(uint8_t channel);
+uint16 adc_read(uint8 channel);
 
 #endif
 

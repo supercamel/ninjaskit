@@ -26,10 +26,9 @@ struct gpio_pin
 
 
 enum : uint8 {
-	PULL_UP,
-	PULL_DOWN,
-	OPEN_DRAIN
-} typedef PIN_PULL_DIRECTION;
+	INPUT_FLOAT,
+	INPUT_ANALOG
+} typedef PIN_INPUT_TYPE;
 
 const bool HIGH = true;
 const bool LOW = false;
@@ -38,7 +37,7 @@ void set_pin(gpio_pin pin, bool high);
 void toggle_pin(gpio_pin pin);
 bool read_pin(gpio_pin pin);
 
-void configure_as_input(gpio_pin pin, PIN_PULL_DIRECTION pull = OPEN_DRAIN);
+void configure_as_input(gpio_pin pin, PIN_INPUT_TYPE pull = INPUT_FLOAT);
 void configure_as_output(gpio_pin pin);
 
 

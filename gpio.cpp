@@ -42,15 +42,22 @@ bool read_pin(gpio_pin pin)
 	return gpio_get(gpio_n_from_bank(pin.bank), (1 << pin.pin));
 }
 
-void configure_as_input(gpio_pin pin, PIN_PULL_DIRECTION dir)
+void configure_as_input(gpio_pin pin, PIN_INPUT_TYPE ipt)
 {
-	//TODO implement pull-up and pull-down
-	//static_assert(dir != OPEN_DRAIN, "Pin pull directions other than OPEN_DRAIN are not yet implemented");
-	
 	uint32 gpio = gpio_n_from_bank(pin.bank);
 	
-	gpio_set_mode(gpio, GPIO_MODE_INPUT, 
-		GPIO_CNF_INPUT_FLOAT, (1 << pin.pin));
+	switch(ipt)
+	{
+	break;
+	case INPUT_FLOAT:
+		gpio_set_mode(gpio, GPIO_MODE_INPUT, 
+			GPIO_CNF_INPUT_FLOAT, (1 << pin.pin));
+	break;
+	case INPUT_ANALOG:
+		gpio_set_mode(gpio, GPIO_MODE_INPUT, GPIO_CNF_INPUT_ANALOG, (1 << pin.pin));
+	break;
+	}
+	
 }
 
 
