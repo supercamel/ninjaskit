@@ -25,8 +25,8 @@ private:
 uint32 i2c_get_last_event(uint32 i2cd);
 
 
-extern I2CMasterDriver twi;
-extern I2CMasterDriver twi1;
+extern I2CMasterDriver i2c1;
+extern I2CMasterDriver i2c2;
 
 #endif
 

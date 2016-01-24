@@ -18,6 +18,8 @@ void clock_setup()
     rcc_periph_clock_enable(RCC_GPIOB);
     rcc_periph_clock_enable(RCC_GPIOC);
 
+	rcc_periph_clock_enable(RCC_AFIO);
+	
     systick_set_clocksource(STK_CSR_CLKSOURCE_AHB_DIV8);
 
     //64Mhz, AHB_DIV8, 64,000,000/8 = 8,000,000

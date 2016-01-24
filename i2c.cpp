@@ -293,7 +293,7 @@ bool I2CMasterDriver::transmit(uint8 slave, uint8* out, uint32 olen, uint8* in, 
     return true;
 }
 
-I2CMasterDriver twi(I2C1);
-I2CMasterDriver twi1(I2C2);
+I2CMasterDriver i2c1(I2C1);
+I2CMasterDriver i2c2(I2C2);
 
 
