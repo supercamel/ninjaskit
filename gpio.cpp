@@ -60,6 +60,17 @@ void configure_as_input(gpio_pin pin, PIN_INPUT_TYPE ipt)
 	
 }
 
+uint32 pulse_in(gpio_pin pin)
+{
+	while(read_pin(pin) == LOW) { }
+	
+	auto start = etk::now();
+	
+	while(read_pin(pin) == HIGH) { }
+	
+	return etk::now().diff_time(start)*1000000;
+}
+
 
 void configure_as_output(gpio_pin pin)
 {

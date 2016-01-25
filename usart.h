@@ -51,7 +51,8 @@ public:
         return ringbuf.peek_ahead(n);
     }
 
-    void empty() {
+    void empty()
+    {
         ringbuf.empty();
     }
 

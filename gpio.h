@@ -37,6 +37,8 @@ void set_pin(gpio_pin pin, bool high);
 void toggle_pin(gpio_pin pin);
 bool read_pin(gpio_pin pin);
 
+uint32 pulse_in(gpio_pin pin);
+
 void configure_as_input(gpio_pin pin, PIN_INPUT_TYPE pull = INPUT_FLOAT);
 void configure_as_output(gpio_pin pin);
 
