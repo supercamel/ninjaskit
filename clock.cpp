@@ -26,12 +26,12 @@ void clock_setup()
     //we're after a 5us clock which means one tick every 200,000 microseconds
     //8,000,000/200,000 = 40
     //40-1 = 39
-    systick_set_reload(7999);
+    systick_set_reload(79);
     //systick_set_reload(1000);
     systick_interrupt_enable();
     systick_counter_enable();
 
-    etk::set_tick_rate(1000);
+    etk::set_tick_rate(10);
 }
 
 
