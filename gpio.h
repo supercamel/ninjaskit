@@ -4,30 +4,30 @@
 #include <etk/etk.h>
 
 enum : uint8 {
-	PA,
-	PB,
-	PC,
-	PD
+    PA,
+    PB,
+    PC,
+    PD
 } typedef GPIO_BANK;
 
 
 struct gpio_pin
 {
-	gpio_pin() { }
-	
-	gpio_pin(GPIO_BANK bank, int pin) : bank(bank), pin(pin)
-	{
-	
-	}
-	
-	GPIO_BANK bank;
-	int pin;
+    gpio_pin() { }
+
+    gpio_pin(GPIO_BANK bank, int pin) : bank(bank), pin(pin)
+    {
+
+    }
+
+    GPIO_BANK bank;
+    int pin;
 };
 
 
 enum : uint8 {
-	INPUT_FLOAT,
-	INPUT_ANALOG
+    INPUT_FLOAT,
+    INPUT_ANALOG
 } typedef PIN_INPUT_TYPE;
 
 const bool HIGH = true;

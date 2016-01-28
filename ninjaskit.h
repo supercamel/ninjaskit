@@ -9,6 +9,7 @@
 #include "clock.h"
 #include "flash.h"
 #include "spi.h"
+#include "pwm.h"
 
 #endif
 

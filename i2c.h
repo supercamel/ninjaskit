@@ -15,7 +15,7 @@ public:
     {
         to_ms = millis;
     }
-    
+
     bool transmit(uint8 slave, uint8* out, uint32 olen, uint8* in, uint32 ilen);
 
 private:

@@ -21,10 +21,10 @@ public:
     {
         return ringbuf.available();
     }
-    
+
     void put(char c)
     {
-    	usart_send_blocking(usart, c);
+        usart_send_blocking(usart, c);
     }
 
     void println(auto& buf)
