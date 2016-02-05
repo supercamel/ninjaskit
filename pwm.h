@@ -5,6 +5,16 @@
 #include "gpio.h"
 
 
+/**
+ * Ninjask uses two hardware timers to generate pulses on up to four digital pins each.
+ *
+ * Each Pulse class has four channels, and each channel is connected to a digital pin. For Pulse1, these pins are
+ *		PA0, PA1, PA2, PA3
+ *
+ * For Pulse2 these pin are
+ *		PA6, PA7, PB0, PB1
+ *
+ */
 class PulseWidth
 {
 public:

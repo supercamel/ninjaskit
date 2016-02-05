@@ -4,6 +4,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/cm3/nvic.h>
 #include <etk/etk.h>
+#include "sched.h"
 
 
 void sys_tick_handler(void)

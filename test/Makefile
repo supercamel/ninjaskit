@@ -13,9 +13,10 @@ INC_DIRS=-I./ -I../EmbeddedToolKit/inc -I../../ -I../
 CFLAGS+=-Wall -Wextra -g -fno-common -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -MD -DSTM32F1 $(INC_DIRS) -fno-common  -DGCC_ARMCM3 -Os
 CPPFLAGS = $(CFLAGS) -fno-rtti -fno-exceptions -std=c++14
 LDFLAGS+=--static -lc -lnosys -T ../STM32F103xB.ld -nostartfiles -Wl,--gc-sections -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -lm -Wl,-Map=$(MAP_NAME) -L../libopencm3 -lopencm3_stm32f1
+ASM_SOURCES=$(wildcard ../*.s)
 C_SOURCES=
 SOURCES=$(wildcard *.cpp) $(wildcard ../*.cpp) $(wildcard ../EmbeddedToolKit/src/*.cpp)
-OBJS=$(SOURCES:.cpp=.o) $(C_SOURCES:.c=.o)
+OBJS=$(SOURCES:.cpp=.o) $(C_SOURCES:.c=.o) $(ASM_SOURCES:.s=.o) 
 D_FILES=$(SOURCES:.cpp=.d) $(C_SOURCES:.c=.o)
 
 SIZE 	= arm-none-eabi-size
@@ -35,6 +36,9 @@ $(ELF_NAME): $(OBJS)
 	@$(CC) $(CPPFLAGS) -c $< -o $@
 
 .c.o:
+	@$(LD) $(CFLAGS) -c $< -o $@
+	
+.s.o:
 	@$(LD) $(CFLAGS) -c $< -o $@
 
 clean:

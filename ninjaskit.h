@@ -1,5 +1,5 @@
-#ifndef CAMELSYS_H_INCLUDED
-#define CAMELSYS_H_INCLUDED
+#ifndef NINJASKIT_H_INCLUDED
+#define NINJASKIT_H_INCLUDED
 
 #include <etk/etk.h>
 #include "usart.h"
@@ -10,6 +10,8 @@
 #include "flash.h"
 #include "spi.h"
 #include "pwm.h"
+#include "sched.h"
+#include "timer.h"
 
 #endif
 

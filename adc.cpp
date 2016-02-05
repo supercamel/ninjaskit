@@ -5,6 +5,7 @@
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/adc.h>
 #include "adc.h"
+#include "sched.h"
 
 void adc_setup()
 {
@@ -38,6 +39,8 @@ void adc_setup()
 
 uint16_t adc_read(uint8_t ch)
 {
+	auto s = scheduler_critical_section();
+	
     while (!(ADC_SR(ADC1) & ADC_SR_EOC));
     uint16_t last_res = ADC_DR(ADC1);
 
@@ -48,6 +51,7 @@ uint16_t adc_read(uint8_t ch)
 
     /* Start the conversion directly (not trigger mode). */
     adc_start_conversion_direct(ADC1);
+    
     return last_res;
 }
 

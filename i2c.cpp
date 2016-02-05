@@ -3,6 +3,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/i2c.h>
 #include <libopencm3/cm3/cortex.h>
+#include "sched.h"
 
 
 using namespace etk;
@@ -87,6 +88,8 @@ void I2CMasterDriver::end()
 
 bool I2CMasterDriver::transmit(uint8 slave, uint8* out, uint32 olen, uint8* in, uint32 ilen)
 {
+	auto s = scheduler_critical_section();
+	
     Time msnow = now();
 
     uint32 reg32 __attribute__((unused));

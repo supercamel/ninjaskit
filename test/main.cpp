@@ -2,6 +2,8 @@
 
 using namespace etk;
 
+constexpr uint32 get_n_tasks() { return 2; }
+
 void hard_fault_handler(void)
 {
     while(true)
@@ -11,49 +13,45 @@ void hard_fault_handler(void)
     }
 }
 
-
-int main(void)
+void green_led_task(void)
 {
-	//initialises the clock and peripherals
-    clock_setup();
-    
-	//initialise the serial port using this baud rate
-    Serial1.begin(57600);
-    
-    sleep_ms(3000);
-    
-    Serial1.print("Starting. . . \r\n");
-
-	auto inp = gpio_pin({PA, 5});
-	configure_as_input(inp);
-	
-	Pulse2.begin();
-	
-	Pulse2.enable_output(0);
-    Pulse2.enable_output(1);
-    Pulse2.enable_output(2);
-    Pulse2.enable_output(3);
-    
-    Pulse2.set_pulse_width(0, 1500);
-    Pulse2.set_pulse_width(1, 1500);
-    Pulse2.set_pulse_width(2, 1500);
-    Pulse2.set_pulse_width(3, 1500);
-    
-    Pulse2.start_timer();
 	while(true)
 	{
-		//print the message
-		Serial1.print(pulse_in(inp), "us\r\n");
+		Serial1.print("red task: ", etk::now().seconds(), "\r\n");
+		etk::sleep_ms(100);
+	}
+}
+
+void blue_led_task(void)
+{
+	while(true)
+	{
+		if(read_pin({PB, 1}))
+			scheduler_suspend();
+		else
+			scheduler_resume();
 		
-		//pause for a moment
-		sleep_ms(200);
+		etk::sleep_ms(250);
 	}
 }
 
 
+int main(void)
+{
+    clock_setup();
+    
+    Serial1.begin(57600);
+    
+    configure_as_output({PA, 5});
+    configure_as_input({PB, 1});
+    
+    const struct task_data task_table[get_n_tasks()] = {
+		create_task<green_led_task, 256, 0>(),
+		create_task<blue_led_task, 256, 1>()};
+	
+    scheduler_init<get_n_tasks()>(&task_table[0]);
 
-
-
-
+    while(1);
+}
 
 

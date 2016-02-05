@@ -1,0 +1,2 @@
+git pull origin master --recurse-submodules
+git submodule update --rebase --init --remote --recursive
