@@ -1,24 +1,13 @@
 /*
- * This file is part of the libopencm3 project.
+ * This scheduler code is mostly based upon work by
  *
  * Copyright (C) 2015 Jonas Norling <jonas.norling@gmail.com>
  *
- * This library is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * https://github.com/JonasNorling/libopencm3-examples/tree/master/examples/stm32/f1/stm32vl-discovery/multithreading
  *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
+ * C++ port/adaption by Samuel Cowen <samuel.cowen@camelsoftware.com>
  *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-
-
 
 #include <libopencm3/cm3/nvic.h>
 #include <libopencm3/cm3/scb.h>

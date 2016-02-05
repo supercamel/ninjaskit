@@ -2,8 +2,6 @@
 
 using namespace etk;
 
-constexpr uint32 get_n_tasks() { return 2; }
-
 void hard_fault_handler(void)
 {
     while(true)
@@ -45,11 +43,12 @@ int main(void)
     configure_as_output({PA, 5});
     configure_as_input({PB, 1});
     
-    const struct task_data task_table[get_n_tasks()] = {
-		create_task<green_led_task, 256, 0>(),
-		create_task<blue_led_task, 256, 1>()};
+    const uint32 n_tasks = 2;
+    const struct task_data task_table[n_tasks] = {
+		create_task<green_led_task, 256>(),
+		create_task<blue_led_task, 256>()};
 	
-    scheduler_init<get_n_tasks()>(&task_table[0]);
+    scheduler_init<n_tasks>(&task_table[0]);
 
     while(1);
 }
