@@ -11,7 +11,6 @@
 #include "spi.h"
 #include "pwm.h"
 #include "sched.h"
-#include "timer.h"
 
 #endif
 
