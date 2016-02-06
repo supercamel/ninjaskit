@@ -110,6 +110,9 @@ static void scheduler_switch(void)
 
 void __attribute__((naked)) pend_sv_handler(void)
 {
+	if(status != SCHEDULER_RUNNING)
+		return;
+	
 	const uint32_t RETURN_ON_PSP = 0xfffffffd;
 	
 	uint32_t lr;
