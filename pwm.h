@@ -18,9 +18,12 @@
 class PulseWidth
 {
 public:
+	const bool MICRO_PRECISION = true;
+	const bool MILLI_PRECISION = false;
+	
     PulseWidth(uint32 timer);
 
-    void begin(uint16 period = 20000);
+    void begin(uint16 period = 20000, bool microsecond_precision = true);
 
     void set_period(uint16 p);
     void enable_output(uint8 channel);

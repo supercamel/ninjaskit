@@ -9,7 +9,7 @@ PulseWidth::PulseWidth(uint32 timer)
     timer_peripheral = timer;
 }
 
-void PulseWidth::begin(uint16 period)
+void PulseWidth::begin(uint16 period, bool microsecond_precision)
 {
     if(timer_peripheral == TIM2)
         rcc_peripheral_enable_clock(&RCC_APB1ENR, RCC_APB1ENR_TIM2EN);
@@ -30,7 +30,11 @@ void PulseWidth::begin(uint16 period)
                    TIM_CR1_CMS_EDGE,
                    TIM_CR1_DIR_UP);
 
-    timer_set_prescaler(timer_peripheral, 64);
+	if(microsecond_precision)
+    	timer_set_prescaler(timer_peripheral, 64);
+    else
+    	timer_set_prescaler(timer_peripheral, 64'000);
+    
     timer_set_repetition_counter(timer_peripheral, 0);
     timer_enable_preload(timer_peripheral);
     timer_continuous_mode(timer_peripheral);
