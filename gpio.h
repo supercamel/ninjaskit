@@ -27,6 +27,8 @@ struct gpio_pin
 
 enum : uint8 {
     INPUT_FLOAT,
+    INPUT_PULLUP,
+    INPUT_PULLDOWN,
     INPUT_ANALOG
 } typedef PIN_INPUT_TYPE;
 

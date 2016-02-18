@@ -55,8 +55,20 @@ void configure_as_input(gpio_pin pin, PIN_INPUT_TYPE ipt)
     case INPUT_ANALOG:
         gpio_set_mode(gpio, GPIO_MODE_INPUT, GPIO_CNF_INPUT_ANALOG, (1 << pin.pin));
         break;
+    case INPUT_PULLUP:
+    {
+    	gpio_set_mode(gpio, GPIO_MODE_INPUT, GPIO_CNF_INPUT_PULL_UPDOWN, (1 << pin.pin));
+    	set_pin(pin, true);
     }
-
+    break;
+    case INPUT_PULLDOWN:
+    {
+    	gpio_set_mode(gpio, GPIO_MODE_INPUT, GPIO_CNF_INPUT_PULL_UPDOWN, (1 << pin.pin));
+    	set_pin(pin, false);
+    }
+    break;
+    }
+	
 }
 
 uint32 pulse_in(gpio_pin pin)
