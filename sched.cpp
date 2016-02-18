@@ -97,7 +97,6 @@ void __scheduler_init(task_control_block* tcb, const task_data* tt, uint32 nt)
 	status = SCHEDULER_RUNNING;
 }
 
-
 static void scheduler_switch(void)
 {
 	do 
@@ -105,8 +104,6 @@ static void scheduler_switch(void)
 		current_task = (current_task + 1) % n_tasks;
 	} while (!tcbs[current_task].runnable);
 }
-
-
 
 void __attribute__((naked)) pend_sv_handler(void)
 {
@@ -169,6 +166,10 @@ SCHEDULER_STATUS scheduler_get_status()
 	return status;
 }
 
+uint32 scheduler_get_task_id()
+{
+	return current_task;
+}
 
 void tim4_isr(void)
 {
@@ -177,5 +178,22 @@ void tim4_isr(void)
 		yield();
 }
 
+namespace etk
+{
+
+void sleep_ms(uint32_t ms)
+{
+    Time start = now();
+	real_t sms = ms/1000.0f;
+
+    while(now().diff_time(start) < sms)
+    {
+    	if(status == SCHEDULER_RUNNING)
+    		yield();
+    }
+}
+
+
+}
 
 

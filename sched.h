@@ -31,6 +31,9 @@ void scheduler_resume();
 //returns the state of the scheduler
 SCHEDULER_STATUS scheduler_get_status();
 
+uint32 scheduler_get_task_id();
+
+
 //uses constructor/destructor is automagically suspend and resume the scheduler during critical paths
 class scheduler_critical_section
 {

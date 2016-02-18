@@ -20,11 +20,11 @@ class PulseWidth
 public:
     PulseWidth(uint32 timer);
 
-    void begin(uint32 period = 20000);
+    void begin(uint16 period = 20000);
 
-    void set_period(uint32 p);
+    void set_period(uint16 p);
     void enable_output(uint8 channel);
-    void set_pulse_width(uint8 channel, uint32 width);
+    void set_pulse_width(uint8 channel, uint16 width);
     void start_timer();
 
 private:

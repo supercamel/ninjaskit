@@ -9,7 +9,7 @@ PulseWidth::PulseWidth(uint32 timer)
     timer_peripheral = timer;
 }
 
-void PulseWidth::begin(uint32 period)
+void PulseWidth::begin(uint16 period)
 {
     if(timer_peripheral == TIM2)
         rcc_peripheral_enable_clock(&RCC_APB1ENR, RCC_APB1ENR_TIM2EN);
@@ -37,7 +37,7 @@ void PulseWidth::begin(uint32 period)
     timer_set_period(timer_peripheral, period);
 }
 
-void PulseWidth::set_period(uint32 period)
+void PulseWidth::set_period(uint16 period)
 {
     timer_set_period(timer_peripheral, period);
 }
@@ -90,7 +90,7 @@ void PulseWidth::enable_output(uint8 channel)
     timer_enable_oc_output(timer_peripheral, tid);
 }
 
-void PulseWidth::set_pulse_width(uint8 channel, uint32 width)
+void PulseWidth::set_pulse_width(uint8 channel, uint16 width)
 {
     tim_oc_id tid = static_cast<tim_oc_id>((channel%4)*2);
     timer_set_oc_value(timer_peripheral, tid, width);
