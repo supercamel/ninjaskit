@@ -16,11 +16,16 @@ public:
     UsartDriver(uint32 usartn);
 
     void begin(uint32 baud, uint32 bits=8, uint32 stopbits=USART_STOPBITS_1, uint32 parity=USART_PARITY_NONE);
-    void end();
+    void disable();
 
-    uint32 available()
+	bool is_full() volatile
+	{
+		return (end + 1) % USART_RING_BUFFER_SIZE == start;
+	}
+	
+    uint32 available() volatile
     {
-        return ringbuf.available();
+        return (USART_RING_BUFFER_SIZE + end - start) % USART_RING_BUFFER_SIZE;
     }
 
     void put(char c)
@@ -41,27 +46,44 @@ public:
             usart_send_blocking(usart, buf[i]);
     }
 
-    uint8 read()
+    uint8 read() volatile
     {
-        if(ringbuf.available())
-            return ringbuf.get();
+        if(available())
+        {
+            uint8 ret = buffer[start];
+        	start = (start + 1) % USART_RING_BUFFER_SIZE;
+        	return ret;
+        }
         return 0;
     }
 
-    uint8 peek_ahead(uint16 n)
+    uint8 peek_ahead(uint16 n) volatile
     {
-        return ringbuf.peek_ahead(n);
+        uint16 pos = (start+n) % USART_RING_BUFFER_SIZE;
+        return buffer[pos];
     }
 
-    void empty()
+    void empty() volatile
     {
-        ringbuf.empty();
+        start = 0;
+        end = 0;
     }
 
 private:
     uint32 usart;
-    uint8 buffer[USART_RING_BUFFER_SIZE];
-    etk::RingBuffer<uint8> ringbuf;
+    volatile uint8 buffer[USART_RING_BUFFER_SIZE];
+    uint32 start = 0;
+    volatile uint32 end = 0;
+    
+    void push(uint8 b) volatile
+    {
+        if(is_full())
+            return;
+            
+        buffer[end] = b;
+        end = (end + 1) % USART_RING_BUFFER_SIZE;
+    }
+    
 
     friend void usart1_isr(void);
     friend void usart2_isr(void);

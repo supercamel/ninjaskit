@@ -2,7 +2,7 @@
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/gpio.h>
 
-UsartDriver::UsartDriver(uint32 usartn) : ringbuf(buffer, USART_RING_BUFFER_SIZE)
+UsartDriver::UsartDriver(uint32 usartn)
 {
     usart = usartn;
 }
@@ -58,7 +58,7 @@ void UsartDriver::begin(uint32 baud, uint32 bits, uint32 stopbits, uint32 parity
     usart_enable(usart);
 }
 
-void UsartDriver::end()
+void UsartDriver::disable()
 {
     usart_disable(usart);
 }
@@ -70,7 +70,7 @@ void usart1_isr(void)
     if (((USART_CR1(USART1) & USART_CR1_RXNEIE) != 0) &&
             ((USART_SR(USART1) & USART_SR_RXNE) != 0))
     {
-        Serial1.ringbuf.put(usart_recv(USART1));
+        Serial1.push(usart_recv(USART1));
     }
 }
 
@@ -81,7 +81,7 @@ void usart2_isr(void)
             ((USART_SR(USART2) & USART_SR_RXNE) != 0))
     {
         char c = usart_recv(USART2);
-        Serial2.ringbuf.put(c);
+        Serial2.push(c);
     }
 }
 
@@ -92,7 +92,7 @@ void usart3_isr(void)
             ((USART_SR(USART3) & USART_SR_RXNE) != 0))
     {
         char c = usart_recv(USART3);
-        Serial3.ringbuf.put(c);
+        Serial3.push(c);
     }
 }
 
