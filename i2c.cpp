@@ -46,18 +46,18 @@ void I2CMasterDriver::begin()
     i2c_set_clock_frequency(i2cd, I2C_CR2_FREQ_32MHZ);
     i2c_set_standard_mode(i2cd);
     /*
-    * fclock for I2C is 36MHz APB2 -> cycle time 28ns, low time at 400kHz
+    * fclock for I2C is 36MHz APB2 -> cycle time 31ns, low time at 400kHz
     * incl trise -> Thigh = 1600ns; CCR = tlow/tcycle = 0x1C,9;
     * Datasheet suggests 0x1e.
     */
-    i2c_set_ccr(i2cd, 0x1c);
+    i2c_set_ccr(i2cd, 0x34);
     /*
-    * fclock for I2C is 36MHz -> cycle time 28ns, rise time for
-    * 400kHz => 300ns and 100kHz => 1000ns; 300ns/28ns = 10;
-    * 1000ns/28ns = 36; 36+1=37=0x25
+    * fclock for I2C is 32MHz -> cycle time 31ns, rise time for
+    * 400kHz => 300ns and 100kHz => 1000ns; 300ns/31ns = 10;
+    * 1000ns/31ns = 32; 32+1=33=0x21
     * Incremented by 1 -> 11.
     */
-    i2c_set_trise(i2cd, 0x23);
+    i2c_set_trise(i2cd, 0x21);
     /*
     * This is our slave address - needed only if we want to receive from
     * other masters.

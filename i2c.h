@@ -7,6 +7,12 @@
 class I2CMasterDriver
 {
 public:
+	enum I2C_ERROR_TYPE
+	{
+		I2C_ERROR_START_FAILED,
+	};
+	
+	
     I2CMasterDriver(uint32 dr);
     void begin();
     void end();
@@ -20,7 +26,7 @@ public:
 
 private:
     uint32 i2cd;
-    uint32 to_ms;
+    uint32 to_ms = 10;
 };
 
 
