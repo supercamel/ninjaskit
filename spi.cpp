@@ -1,6 +1,5 @@
 #include "spi.h"
 #include <libopencm3/stm32/rcc.h>
-#include <libopencm3/stm32/spi.h>
 #include <libopencm3/stm32/gpio.h>
 #include "sched.h"
 
@@ -39,15 +38,17 @@ void SPIMasterDriver::begin()
 
     spi_reset(spid);
 
-    spi_init_master(SPI2, SPI_CR1_BAUDRATE_FPCLK_DIV_64, SPI_CR1_CPOL_CLK_TO_1_WHEN_IDLE,
+    spi_init_master(spid, SPI_CR1_BAUDRATE_FPCLK_DIV_256, SPI_CR1_CPOL_CLK_TO_1_WHEN_IDLE,
                     SPI_CR1_CPHA_CLK_TRANSITION_2, SPI_CR1_DFF_8BIT, SPI_CR1_MSBFIRST);
 
-    //spi_set_unidirectional_mode(spid);
+    //spi_set_bidirectional_mode(spid);
     spi_set_receive_only_mode(spid);
     spi_enable_software_slave_management(spid);
 
     spi_disable_crc(spid);
     spi_set_nss_high(spid);
+    
+    spi_enable(spid);
 }
 
 void SPIMasterDriver::put(char c)
@@ -58,12 +59,12 @@ void SPIMasterDriver::put(char c)
 
 char SPIMasterDriver::read()
 {
-	auto s = scheduler_critical_section();
     spi_enable(spid);
     char c = spi_read(spid);
     spi_disable(spid);
     return c;
 }
+
 
 uint8 SPIMasterDriver::transfer(uint8 data)
 {
