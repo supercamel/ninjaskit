@@ -7,7 +7,7 @@
 #include "sched.h"
 
 
-const uint16 USART_RING_BUFFER_SIZE = 255;
+const uint16 USART_RING_BUFFER_SIZE = 64;
 
 
 class UsartDriver : public etk::Stream<UsartDriver>
