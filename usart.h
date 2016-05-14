@@ -4,7 +4,6 @@
 #include <etk/etk.h>
 #include <libopencm3/stm32/usart.h>
 #include <libopencm3/cm3/nvic.h>
-#include "sched.h"
 
 
 const uint16 USART_RING_BUFFER_SIZE = 64;
@@ -30,7 +29,6 @@ public:
 
     void put(char c)
     {
-    	auto s = scheduler_critical_section();
         usart_send_blocking(usart, c);
     }
 

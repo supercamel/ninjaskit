@@ -39,8 +39,6 @@ void adc_setup()
 
 uint16_t adc_read(uint8_t ch)
 {
-	auto s = scheduler_critical_section();
-	
     while (!(ADC_SR(ADC1) & ADC_SR_EOC));
     uint16_t last_res = ADC_DR(ADC1);
 

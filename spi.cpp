@@ -1,7 +1,6 @@
 #include "spi.h"
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/gpio.h>
-#include "sched.h"
 
 SPIMasterDriver::SPIMasterDriver(uint32 dr)
 {
@@ -53,7 +52,6 @@ void SPIMasterDriver::begin()
 
 void SPIMasterDriver::put(char c)
 {
-	auto s = scheduler_critical_section();
     spi_send(spid, static_cast<uint8_t>(c));
 }
 
@@ -68,7 +66,6 @@ char SPIMasterDriver::read()
 
 uint8 SPIMasterDriver::transfer(uint8 data)
 {
-	auto s = scheduler_critical_section();
     return spi_xfer(spid, data);
 }
 

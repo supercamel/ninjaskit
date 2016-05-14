@@ -1,6 +1,5 @@
 #include "flash.h"
 #include <libopencm3/stm32/flash.h>
-#include "sched.h"
 
 const int FLASH_PAGE_SIZE = 0x800;
 const int FLASH_PAGE_NUM_MAX = 127;
@@ -8,8 +7,6 @@ const int FLASH_PAGE_NUM_MAX = 127;
 
 uint32 flash_program_data(uint32 start_address, uint8 *input_data, uint16 num_elements)
 {
-	auto s = scheduler_critical_section();
-	
 	uint16 iter;
     uint32 current_address = start_address;
     uint32 page_address = start_address;
