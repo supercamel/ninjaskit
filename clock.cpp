@@ -6,16 +6,18 @@
 #include <etk/etk.h>
 #include "sched.h"
 
+using namespace etk;
+
 static volatile Time _now;
 
 void sys_tick_handler(void)
 {
-    _now.mic += 10;
+    _now.micros() += 10;
 
-	if(_now.mic >= 1000000)
+	if(_now.micros() >= 1000000)
 	{
-		_now.sec++;
-		_now.mic = 0;
+		_now.seconds()++;
+		_now.micros() = 0;
 	}
 }
 

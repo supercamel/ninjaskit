@@ -3,6 +3,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/cm3/nvic.h>
 #include <libopencm3/stm32/exti.h>
+#include "clock.h"
 
 
 static uint32 gpio_n_from_bank(GPIO_BANK bank)
@@ -75,11 +76,11 @@ uint32 pulse_in(gpio_pin pin)
 {
     while(read_pin(pin) == LOW) { }
 
-    auto start = etk::now();
+    auto start = now();
 
     while(read_pin(pin) == HIGH) { }
 
-    return etk::now().diff_time(start)*1000000;
+    return now().diff_time(start)*1000000;
 }
 
 
