@@ -6,10 +6,17 @@
 #include <etk/etk.h>
 #include "sched.h"
 
+static volatile Time _now;
 
 void sys_tick_handler(void)
 {
-    etk::tick();
+    _now.mic += 10;
+
+	if(_now.mic >= 1000000)
+	{
+		_now.sec++;
+		_now.mic = 0;
+	}
 }
 
 void clock_setup()
@@ -31,9 +38,40 @@ void clock_setup()
     //systick_set_reload(1000);
     systick_interrupt_enable();
     systick_counter_enable();
-
-    etk::set_tick_rate(10);
 }
 
+/**
+ * \brief Returns the current time.
+ */
+Time __attribute__((weak)) now()
+{
+	return _now;
+}
+
+/**
+	 * \brief Sleeps for a number of milliseconds.
+	 * @arg ms Number of milliseconds to wait.
+	 */
+void __attribute__((weak)) sleep_ms(uint32 ms)
+{
+    Time start = now();
+	real_t sms = ms/1000.0f;
+
+    while(now().diff_time(start) < sms)
+    { }
+}
+
+/**
+ * \brief Sleeps for a number of microseconds.
+ * @args us Number of microseconds to wait.
+ */
+void __attribute__((weak)) sleep_us(uint32 us)
+{
+    Time start = now();
+	real_t sus = us/1000000.0f;
+
+    while(now().diff_time(start) < sus)
+    { }
+}
 
 

@@ -2,7 +2,7 @@
 #define I2C_DRIVER_H_INCLUDED
 
 #include <etk/etk.h>
-
+#include "clock.h"
 
 class I2CMasterDriver
 {

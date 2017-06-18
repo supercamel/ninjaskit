@@ -23,7 +23,7 @@ int main(void)
     while(1)
     {
     	Serial1.print(read_pin({PB, 1}), "\r\n");
-    	etk::sleep_ms(100);
+    	sleep_ms(100);
     }
 }
 
