@@ -17,13 +17,16 @@ int main(void)
     clock_setup();
     
     Serial1.begin(57600);
-    
-    configure_as_input({PB, 1}, INPUT_PULLUP);
+    Serial2.begin(57600);
+    Serial3.begin(57600);
+    SoftSerial.begin();
     
     while(1)
     {
-    	Serial1.print(read_pin({PB, 1}), "\r\n");
-    	sleep_ms(100);
+    	SoftSerial.print("Hello world!\r\n");
+    	while(SoftSerial.available())
+    		Serial1.put(SoftSerial.read());
+    	sleep_ms(1);
     }
 }
 

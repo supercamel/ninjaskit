@@ -12,7 +12,7 @@ static volatile Time _now;
 
 void sys_tick_handler(void)
 {
-    _now.micros() += 10;
+    _now.micros() += 1000;
 
 	if(_now.micros() >= 1000000)
 	{
@@ -23,7 +23,7 @@ void sys_tick_handler(void)
 
 void clock_setup()
 {
-    rcc_clock_setup_in_hsi_out_64mhz();
+    rcc_clock_setup_in_hse_8mhz_out_72mhz();
     rcc_periph_clock_enable(RCC_GPIOA);
     rcc_periph_clock_enable(RCC_GPIOB);
     rcc_periph_clock_enable(RCC_GPIOC);
@@ -36,7 +36,11 @@ void clock_setup()
     //we're after a 5us clock which means one tick every 200,000 microseconds
     //8,000,000/200,000 = 40
     //40-1 = 39
-    systick_set_reload(79);
+    
+    
+    //72,000,000/8 = 9,000,000
+    //9,000,000/10,000 = 900
+    systick_set_reload(899);
     //systick_set_reload(1000);
     systick_interrupt_enable();
     systick_counter_enable();

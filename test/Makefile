@@ -50,5 +50,5 @@ upload:
 	stm32flash -w $(BIN_NAME) -v -g 0x0 /dev/ttyUSB0
 
 monitor:
-	python terminal /dev/ttyUSB0
+	python2 terminal /dev/ttyUSB0
 
